@@ -1,0 +1,66 @@
+.Form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.Form_div{
+    display: flex;
+    flex-direction: column;
+}
+
+.Form_label{
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}   
+
+.Form_input{
+    background-color: rgba(0, 0, 0, .2);
+    width: 67cqmin;
+    height: 70px;
+    font-size: 1.3em;
+    padding-left: 20px;
+    border-width: 0;
+    border-radius: 2cqmin;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+/* @media only screen and (min-width: 959px) {
+    .Form_input{
+        width: 70cqmin;
+    }
+}*/
+
+@media only screen and (max-width: 479px){
+    .Form_label{
+        font-size: 13px;
+        margin-bottom: 3px;
+    }
+
+    .Form_input{
+        width: 75cqmin;
+        height: 30px;
+        padding-left: 10px;
+        border-width: 0;
+        font-size: 15px;
+    }
+
+} 
+
+/* 
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+*/
+
+/* 
+como fazer isso
+
+|otavio                23|
+|garbriel               3|
+|otavio                 6|
+|otavio                 5|
+*/
