@@ -3,16 +3,16 @@
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    width: 70cqmin;
-    height: 400px;
     padding: 5cqmin;
     border-radius: 4cqmin;
-    background-color: #4b4f50;
+    /* background: linear-gradient(145deg, #121a27, #151f2e);
+    box-shadow:  15px 15px 30px #080c11,
+                -15px -15px 30px #202e45; */
 }
 
 @media only screen and (max-width: 479px){
     .cFormulario{
-        width: 80cqmin;
-        height: 200px;
+        box-shadow:  4px 4px 12px #080c11,
+                    -4px -4px 12px #202e45;
     }
 }
