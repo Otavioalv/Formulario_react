@@ -1,11 +1,20 @@
 import styles from './Formulario.module.css';
+/* import {useState} from 'react'; */
 
 /* 
     Como parametro, pase color, para mudar a cor do texto, e object
     para o imput,o type e o key, e value e o nome, id, placeholder, do
     imput 
 */
+
+/* 
+    FormInfo_Login = {
+        email: 'Email', 
+        password: 'Password', 
+        text: 'Name'},
+*/
 function Formulary({color, object}){
+    
     return(
         <form className={styles.Form} style={{color: color.color}}>  
             {
@@ -53,7 +62,7 @@ Formulary.defaultProps = {
         boxShadowColorI: "inset 1cqmin 1cqmin 1.8cqmin #080c11,inset -1cqmin -1cqmin 1.8cqmin #202e45",
         color: "#fff"
       },
-    object: {text: "Insira um texto"}
+    object: {text: "Insira um texto"},
 }
 
 export default Formulary

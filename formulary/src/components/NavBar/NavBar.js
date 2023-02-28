@@ -58,13 +58,12 @@ function NavBar({object, color}){
 
 NavBar.defaultProps ={
     object: {Home: <h1>Conteude de home</h1>, Conteudo: <h1>Conteudo de Conteudo</h1>},
-    color:  {
+    color: {
         background: "linear-gradient(145deg, #121a27, #151f2e)",
         boxShadowColorD: "1cqmin 1cqmin 2cqmin #080c11,-1cqmin -1cqmin 2cqmin #202e45",
         boxShadowColorI: "inset 1cqmin 1cqmin 1.8cqmin #080c11,inset -1cqmin -1cqmin 1.8cqmin #202e45",
         color: "#fff"
     }
-    
 }
 
 export default NavBar

@@ -73,8 +73,8 @@
         padding-left: 10px;
         border-width: 0;
         font-size: 15px;
-        box-shadow: inset 4px 4px 12px #080c11,
-                    inset -4px -4px 12px #202e45;
+      /*   box-shadow: inset 4px 4px 12px #080c11,
+                    inset -4px -4px 12px #202e45; */
     }
 
     .Form_div__button{

@@ -33,9 +33,7 @@
 }
 
 .List_itens:hover{
-    background: linear-gradient(145deg, #080b11, #131a29);
-    box-shadow:  5px 5px 13px #0f161f,
-                -5px 5px 13px #273955;
+    background: linear-gradient(145deg, #ff000027, #ff0000);
 }
 
 @media only screen and (max-width: 479px){
@@ -43,8 +41,8 @@
         display: flex;
         padding: 3px;
         border-radius: 3cqmin;
-        box-shadow: inset 10px 10px 18px #080c11,
-                    inset -10px -10px 18px #202e45;
+      /*   box-shadow: inset 10px 10px 18px #080c11,
+                    inset -10px -10px 18px #202e45; */
     }
         
     
@@ -55,15 +53,15 @@
         margin-left: 10px;
         margin-right: 10px;
         border-radius: 1.5cqmin;
-        background: linear-gradient(145deg, #121a27, #151f2e);
+        /* background: linear-gradient(145deg, #121a27, #151f2e);
         box-shadow:  9px 9px 20px #080c11,
-                    -9px -9px 20px #202e45;
+                    -9px -9px 20px #202e45; */
         cursor: pointer;
     }
     
-    .List_itens:hover{
+  /*   .List_itens:hover{
         background: linear-gradient(145deg, #080b11, #131a29);
         box-shadow:  5px 5px 13px #0f161f,
                     -5px 5px 13px #273955;
-    }
+    } */
 }
