@@ -32,12 +32,13 @@ function Formulary({color, object}){
     })
 
     const handlFormChange = (e) => {
-        if(e.target.getAttribute('email') === 'otavio'){
+        if(e.target.getAttribute('email') === 'test@gmail.com'){
             setForm({
                 "email": e.target.value,
                 "password": form.password, 
                 "text": form.text
             })
+            console.log("bem vindo");
         }
         else if(e.target.getAttribute('email') === 'gabriel'){
             setForm({
@@ -46,6 +47,12 @@ function Formulary({color, object}){
                 "text": e.target.value
             })
         }
+
+        //alteração do input não seja ignorada
+        const { name, value } = e.target;
+        setForm(prevState => ({ ...prevState, [name]: value }));
+
+        
     }
 
     return(
@@ -60,9 +67,10 @@ function Formulary({color, object}){
                     <input
                         type={key}
                         id={`i${value}`}
-                        name={value}
+                        name={key}
                         placeholder={value}
                         className={styles.Form_input}
+                        value={form[key]}
                         onChange={(e) => handlFormChange(e)}
                         style={{
                             color: color.color,
@@ -84,13 +92,8 @@ function Formulary({color, object}){
                         boxShadow: color.boxShadowColorD
                     }}
                 >Submit</button>
+               {/*  <button type="button" onClick={() => console.log(form)}>Exibir valores do formulário</button> */}
             </div>
-            <h1>
-                formule
-            {form.email}
-            {form.password}
-            {form.text}
-            </h1>
         </form>
     )
 }

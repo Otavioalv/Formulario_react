@@ -83,4 +83,5 @@ function App() {
   );
 }
 
+/* history.push(`/formulario/info?email=${form.email}&password=${form.password}&text=${form.text}`); */
 export default App;
