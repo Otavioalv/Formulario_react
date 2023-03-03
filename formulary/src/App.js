@@ -44,8 +44,13 @@ function App() {
         delete FormInfo_SignUp.text;
   
 
+  /* -------------- */
+
+  /*  */
+
+  /* console.log(usserInfo); */
   const NavBar_objLoguin = {
-      Login: <Formulary object={FormInfo_Login} color={Tema[t]} />, 
+      Login: <Formulary object={FormInfo_Login} color={Tema[t]}/>, 
       SignUp: <Formulary object={FormInfo_SignUp} color={Tema[t]} />
     } 
 

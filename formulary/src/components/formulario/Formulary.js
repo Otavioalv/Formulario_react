@@ -1,6 +1,5 @@
+import { useState } from 'react';
 import styles from './Formulario.module.css';
-/* import {useState} from 'react'; */
-
 /* 
     Como parametro, pase color, para mudar a cor do texto, e object
     para o imput,o type e o key, e value e o nome, id, placeholder, do
@@ -8,13 +7,47 @@ import styles from './Formulario.module.css';
 */
 
 /* 
-    FormInfo_Login = {
-        email: 'Email', 
-        password: 'Password', 
-        text: 'Name'},
+    const [nome, setName] = useState();
+    const meuObjeto = {
+    chave1: "valor1",
+    chave2: "valor2"
+    };
+
+    meuObjeto.chave3 = "valor3";
+
+    console.log(meuObjeto);
+
+    {
+     chave1: "valor1",
+    chave2: "valor2",
+    chave3: "valor3"
+    }
 */
 function Formulary({color, object}){
-    
+
+    const [form, setForm] = useState({
+        "email": "",
+        "password": "", 
+        "text": ""
+    })
+
+    const handlFormChange = (e) => {
+        if(e.target.getAttribute('email') === 'otavio'){
+            setForm({
+                "email": e.target.value,
+                "password": form.password, 
+                "text": form.text
+            })
+        }
+        else if(e.target.getAttribute('email') === 'gabriel'){
+            setForm({
+                "email": form.email,
+                "password": form.password, 
+                "text": e.target.value
+            })
+        }
+    }
+
     return(
         <form className={styles.Form} style={{color: color.color}}>  
             {
@@ -30,6 +63,7 @@ function Formulary({color, object}){
                         name={value}
                         placeholder={value}
                         className={styles.Form_input}
+                        onChange={(e) => handlFormChange(e)}
                         style={{
                             color: color.color,
                             background: color.background,
@@ -51,6 +85,12 @@ function Formulary({color, object}){
                     }}
                 >Submit</button>
             </div>
+            <h1>
+                formule
+            {form.email}
+            {form.password}
+            {form.text}
+            </h1>
         </form>
     )
 }
