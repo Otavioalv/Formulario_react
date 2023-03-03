@@ -28,7 +28,7 @@
 
 ![image](https://user-images.githubusercontent.com/107057360/222798251-6d75be72-de44-4130-97c5-c23408d6f6f4.png)
 
-* em alguns trechos dos codigos resolvi praticar tambem manipulando objetos em javaScript;
+* em alguns trechos dos codigos resolvi praticar manipulação de objetos em javaScript;
 
 
 
